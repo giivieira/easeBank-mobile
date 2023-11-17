@@ -1,5 +1,5 @@
 import React from "react";
-import {View,Text, StyleSheet, TouchableOpacity, ScrollView} from "react-native";
+import {View,Text, StyleSheet, TouchableOpacity, ScrollView, Image} from "react-native";
 
 import {AntDesign} from '@expo/vector-icons'
 
@@ -8,9 +8,10 @@ export default function Actions() {
         <ScrollView style={styles.container} horizontal={true} showsHorizontalScrollIndicator={false}>
             <TouchableOpacity style={styles.actionButton}>
                 <View style={styles.areaButton}>
-                    <AntDesign name="addfolder" size={26} color="#FFF"></AntDesign>
+                    <Image source={require('../../../assets/image-pix.png')}
+                    style={styles.actionButton}/>
                 </View>
-                <Text style={styles.labelButton}>Entradas</Text>
+                <Text style={styles.labelButton}>Pix</Text>
             </TouchableOpacity>
         </ScrollView>
     );
@@ -26,6 +27,11 @@ const styles = StyleSheet.create({
         paddingStart: 14,
     },
     actionButton:{
-        alignItems: 'center'
+        alignItems: 'center',
+        
+    },
+    labelButton:{
+        color: '#FFF',
+        marginTop: 10
     }
 })
