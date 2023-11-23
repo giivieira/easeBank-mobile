@@ -1,23 +1,30 @@
 import React, { startTransition } from "react";
-import {View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 
-export default function Balance({saldo}) {
+// Criando componente que mostra o saldo do usuário
+export default function Balance({ saldo }) {
     return (
-        <View style={styles.container}>
-            <View style={styles.item}>
-                <Text style={styles.itemTitle}>Saldo</Text>
-                <View style={styles.content}>
-                    <Text style={styles.currencySymbol}>R$</Text>
-                    <Text style={styles.balance}>{saldo}</Text>
+
+        <ImageBackground style={styles.container} source={require('../../../assets/quadriculado-fundoCinza.png')}>
+        <View >
+                <View style={styles.item}>
+
+                    <Text style={styles.itemTitle}>Saldo</Text>
+                    <View style={styles.content}>
+                        <Text style={styles.currencySymbol}>R$</Text>
+                        <Text style={styles.balance}>{saldo}</Text>
+                    </View>
                 </View>
-            </View>
+            
         </View>
+        </ImageBackground>
     );
 }
 
+//Estilizando o container que guarda as informações
 const styles = StyleSheet.create({
-    container:{
-        backgroundColor: '#232323',
+    container: {
+        // backgroundColor: '#2E2E2E',
         flexDirection: 'row',
         justifyContent: 'space-between',
         paddingStart: 18,
@@ -25,24 +32,26 @@ const styles = StyleSheet.create({
         marginTop: -24,
         marginStart: 14,
         marginEnd: 14,
-        borderRadius: 30, 
         paddingTop: 22,
         paddingBottom: 22,
+        
     },
-    itemTitle:{
+
+    //Estilizando as informações contidas no container
+    itemTitle: {
         fontSize: 20,
         color: '#FFF'
     },
-    content:{
+    content: {
         flexDirection: 'row',
         alignItems: 'center',
     },
-    currencySymbol:{
+    currencySymbol: {
         fontSize: 22,
         color: '#FFF',
         marginRight: 6,
     },
-    balance:{
+    balance: {
         fontSize: 22,
         color: '#FFF',
     }
