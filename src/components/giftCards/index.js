@@ -7,14 +7,14 @@ export default function GiftCards({ }) {
             <Text style={styles.itemTitle}>Compre gift cards</Text>
             <View style={styles.AreaGiftButton}>
                 <TouchableOpacity activeOpacity={0.6} style={styles.giftButton}>
-                    <Image source={require('../../../assets/ifood.png')} />
+                    <Image source={require('../../assets/ifood.png')} />
                 </TouchableOpacity>
 
                 <TouchableOpacity activeOpacity={0.6} style={styles.giftButton}>
-                    <Image source={require('../../../assets/freeFire.png')} />
+                    <Image source={require('../../assets/freeFire.png')} />
                 </TouchableOpacity>
                 <TouchableOpacity activeOpacity={0.6} style={styles.giftButton}>
-                    <Image source={require('../../../assets/amazon.png')} />
+                    <Image source={require('../../assets/amazon.png')} />
                 </TouchableOpacity>
             </View>
         </View>

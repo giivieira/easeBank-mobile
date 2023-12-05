@@ -4,9 +4,10 @@ import Balance from '../../components/Balance';
 import Actions from '../../components/Actions';
 import GiftCards from '../../components/giftCards';
 import Invoice from '../../components/Invoice';
+import Inicial from '../../components/Inicial/Header';
 
 
-export default function App() {
+export default function Home() {
   return (
     <View style={styles.container}>
         <Header name="Giovanna Vieira"/>

@@ -10,7 +10,7 @@ export default function Header({ name }) {
       <View style={styles.container}>
         <View style={styles.content}>
           <View style={styles.containerIcon}>
-            <Image source={require('../../../assets/iconBank.png')} />
+            <Image source={require('../../assets/iconBank.png')} />
           </View>
           <Text style={styles.username}>{name}</Text>
           <TouchableOpacity activeOpacity={0.9} style={styles.buttonUser}>

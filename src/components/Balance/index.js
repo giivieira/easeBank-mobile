@@ -5,7 +5,7 @@ import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 export default function Balance({ saldo }) {
     return (
 
-        <ImageBackground style={styles.container} source={require('../../../assets/quadriculado-fundoCinza.png')}>
+        <ImageBackground style={styles.container} source={require('../../assets/quadriculado-fundoCinza.png')}>
         <View >
                 <View style={styles.item}>
 

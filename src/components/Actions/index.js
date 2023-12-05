@@ -9,7 +9,7 @@ export default function Actions () {
         <ScrollView style={styles.container} horizontal={true} showsHorizontalScrollIndicator={false}>
             <TouchableOpacity activeOpacity={0.6} style={styles.actionButton}>
                 <View style={styles.areaButton}>
-                    <Image source={require('../../../assets/image-pix.png')}
+                    <Image source={require('../../assets/image-pix.png')}
                     style={styles.imageButton}/>
                 </View>
                 <Text style={styles.labelButton}>Pix</Text>
@@ -18,7 +18,7 @@ export default function Actions () {
 
             <TouchableOpacity activeOpacity={0.6} style={styles.actionButton}>
                 <View style={styles.areaButton}>
-                    <Image source={require('../../../assets/image-qrCode.png')}
+                    <Image source={require('../../assets/image-qrCode.png')}
                     style={styles.imageButton}/>
                 </View>
                 <Text style={styles.labelButton}>QR Code</Text>
@@ -27,7 +27,7 @@ export default function Actions () {
             
             <TouchableOpacity activeOpacity={0.6} style={styles.actionButton}>
                 <View style={styles.areaButton}>
-                    <Image source={require('../../../assets/image-virtualCard.png')}
+                    <Image source={require('../../assets/image-virtualCard.png')}
                     style={styles.imageButton}/>
                 </View>
                 <Text style={styles.labelButton}>Card</Text>
@@ -36,7 +36,7 @@ export default function Actions () {
 
             <TouchableOpacity activeOpacity={0.6} style={styles.actionButton}>
                 <View style={styles.areaButton}>
-                    <Image source={require('../../../assets/image-loan.png')}
+                    <Image source={require('../../assets/image-loan.png')}
                     style={styles.imageButton}/>
                 </View>
                 <Text style={styles.labelButton}>Loan</Text>
