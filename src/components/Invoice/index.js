@@ -1,7 +1,7 @@
 import React, { startTransition } from "react";
 import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 
-// Criando componente que mostra o saldo do usuário
+// Criando componente que mostra a fatura do cartão do usuário
 export default function Invoice({ fatura }) {
     return (
 

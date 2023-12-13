@@ -10,11 +10,11 @@ const Inicial = () => (
             <Image source={require('../../../assets/iconBank.png')} />
           </View>
       
-      <Text style={styles.title}>TRANSFORM YOUR {'\n'}
-      FINANCIAL LIFE {'\n'}
-      WITH THE POWER {'\n'}
-      OF EASE {'\n'}
-      TECHNOLOGY</Text>
+      <Text style={styles.title}>TRANSFORME SUA{'\n'}
+      VIDA FINANCEIRA{'\n'}
+      COM O PODER {'\n'}
+      DA TECNOLOGIA {'\n'}
+      EASE BANK</Text>
       <TouchableOpacity style={styles.btn1}
         onPress={() => NavigationPreloadManager.navigate('criarConta')}
         >
